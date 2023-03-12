@@ -1,5 +1,6 @@
 .search-container {
   width: 30rem;
+  position: relative;
 }
 
 .search-box {
@@ -12,4 +13,19 @@
 
 .search-box:focus {
   outline: 1px solid #16a2ff;
+}
+
+.suggestion-wrapper {
+  border-style: groove;
+  height: 50;
+  padding-left: 15;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-top: 0,
+}
+
+.error {
+  margin-top: 1em;
+  color: red;
 }

@@ -17,6 +17,20 @@
   font-weight: bold;
 }
 
+.product-image-container {
+  display: flex;
+  justify-content: center;
+}
+
 .product-image {
   max-width: 100%;
+  height: 32em;
 }
+
+.product-description {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
