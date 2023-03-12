@@ -45,6 +45,8 @@ function Autocomplete(props) {
           alignItems: "center",
           backgroundColor: "white",
           borderTop: 0,
+          width: "90%",
+          margin: "0 auto"
         }}
         data-testid="suggestions"
       >

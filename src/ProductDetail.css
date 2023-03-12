@@ -32,5 +32,16 @@
   white-space: nowrap;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
+  color: #989898
+}
+
+.product-price{
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .detail-container {
+    width: 100%
+  }
 }
 
