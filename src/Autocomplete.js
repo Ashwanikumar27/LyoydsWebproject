@@ -32,24 +32,10 @@ function Autocomplete(props) {
 
     return () => clearTimeout(getData);
   }, [searchTerm]);
-  console.log("suggestions", suggestions);
 
-  const SuggestionsListComponent = (props) => {
-    return props.suggestions.map((suggestion) => (
-      <div
-        style={{
-          borderStyle: "groove",
-          height: 50,
-          paddingLeft: 15,
-          display: "flex",
-          alignItems: "center",
-          backgroundColor: "white",
-          borderTop: 0,
-          width: "90%",
-          margin: "0 auto"
-        }}
-        data-testid="suggestions"
-      >
+  const SuggestionsListComponent = () => {
+    return suggestions.map((suggestion) => (
+      <div className="suggestion-wrapper" data-testid="suggestions">
         <span
           key={suggestion.id}
           onClick={() => {
